@@ -4,12 +4,11 @@
 #include <string>
 #include <stdexcept>
 #include <limits>
-#include <cstddef> // Pentru NULL / 0
+#include <cstddef> 
 
-// --- Constructori ---
+
 Hotel::Hotel() : numarStele(0) {
-    // Vectorii de pointeri sunt initializati goi implicit
-    // std::cout << "Constructor Hotel (default) - Pointeri" << std::endl;
+   
 }
 
 Hotel::Hotel(const std::string& nume, const std::string& adresa, int numarStele)
@@ -19,7 +18,7 @@ Hotel::Hotel(const std::string& nume, const std::string& adresa, int numarStele)
 
 
 Hotel::~Hotel() {
-    // std::cout << "Destructor Hotel: Eliberare memorie pentru '" << nume << "'..." << std::endl;
+    //std::cout << "Destructor Hotel: Eliberare memorie pentru '" << nume << "'..." << std::endl;
 
 
     //std::cout << "  - Stergere Camere..." << std::endl;
