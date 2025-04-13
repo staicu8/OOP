@@ -12,9 +12,7 @@ public:
     virtual void afisare(std::ostream& os) const = 0;
 };
 
-inline std::ostream& operator<<(std::ostream& os, const IAfisabil& obj) {
-    obj.afisare(os);
-    return os;
-}
+std::ostream& operator<<(std::ostream& os, const IAfisabil& obj);
+
 
 #endif // IAFISABIL_H
